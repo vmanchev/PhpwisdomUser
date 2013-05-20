@@ -1,0 +1,23 @@
+<h1>phpwisdom\user\login</h1>
+
+<?php
+$form = $this->loginForm;
+$form->prepare();
+$form->setAttribute('action', $this->url('phpwisdomuserlogin'));
+$form->setAttribute('method', 'post');
+?>
+
+<?php echo $this->form()->openTag($form) ?>
+
+    <dl class="zend_form">
+
+        <dt><?php echo $this->formLabel($form->get('username')) ?></dt>
+        <dd><?php echo $this->formInput($form->get('username')) ?></dd>
+
+        <dt><?php echo $this->formLabel($form->get('password')) ?></dt>
+        <dd><?php echo $this->formInput($form->get('password')) ?></dd>
+
+        <dd><?php echo $this->formInput($form->get('submit')) ?></dd>
+    </dl>
+
+<?php echo $this->form()->closeTag() ?>
