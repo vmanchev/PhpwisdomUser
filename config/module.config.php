@@ -3,11 +3,6 @@ namespace User;
 
 return array(
     'view_manager' => array(
-        'template_map' => array(
-            'phpwisdom/index/index' => __DIR__ .'/../view/user/index/index.phtml',
-            'phpwisdom/index/login' => __DIR__ .'/../view/user/index/login.phtml',
-            'phpwisdom/index/register' => __DIR__ .'/../view/user/index/register.phtml'
-        ),
         'template_path_stack' => array(
             'phpwisdomuser' => __DIR__ . '/../view',
         ),
