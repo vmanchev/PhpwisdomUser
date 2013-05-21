@@ -1,5 +1,5 @@
 <?php
-namespace Phpwisdom\User\Form;
+namespace PhpwisdomUser\Form;
 
 use Zend\Form\Form;
 use Zend\Form\Element;

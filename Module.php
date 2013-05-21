@@ -1,6 +1,6 @@
 <?php
 
-namespace Phpwisdom\User;
+namespace PhpwisdomUser;
 
 use Zend\ModuleManager\ModuleManager;
 use Zend\ModuleManager\Feature\AutoloaderProviderInterface;
@@ -36,7 +36,7 @@ class Module implements
     {
         return array(
             'invokables' => array(
-                'Phpwisdom\User\Form\Login'                => 'Phpwisdom\User\Form\Login'
+                'PhpwisdomUser\Form\Login'                => 'PhpwisdomUser\Form\Login'
             ),
             'factories' => array(
                 'phpwisdomuser_module_options' => function ($sm) {
